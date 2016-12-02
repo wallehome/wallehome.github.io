@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Linux," />
+  <meta name="keywords" content="Vim," />
 
 
 
@@ -84,22 +84,19 @@
 
 
 
-<meta name="description" content="NEWS: Dream it possible http://#
-@Eter#
-Dream it possible">
+<meta name="description" content="Dream it possible">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux Lession 02 - 如何学习Linux">
 <meta property="og:url" content="https://wallehome.github.io/2016/11/27/LinuxLession-02/index.html">
 <meta property="og:site_name" content="WalleHome">
-<meta property="og:description" content="NEWS: Dream it possible http://#
-@Eter#
-Dream it possible">
-<meta property="og:updated_time" content="2016-11-28T05:43:46.000Z">
+<meta property="og:description" content="Dream it possible">
+<meta property="og:image" content="https://wallehome.github.io/2016/11/27/LinuxLession-02/vim_01.png">
+<meta property="og:image" content="https://wallehome.github.io/2016/11/27/LinuxLession-02/vim_02.png">
+<meta property="og:updated_time" content="2016-12-02T16:04:13.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux Lession 02 - 如何学习Linux">
-<meta name="twitter:description" content="NEWS: Dream it possible http://#
-@Eter#
-Dream it possible">
+<meta name="twitter:description" content="Dream it possible">
+<meta name="twitter:image" content="https://wallehome.github.io/2016/11/27/LinuxLession-02/vim_01.png">
 
 
 
@@ -343,11 +340,127 @@ Dream it possible">
       
 
       
-        <blockquote><p>NEWS: Dream it possible http://#</p>
-<footer><strong>@Eter</strong><cite><a href="https://#" target="_blank" rel="external">#</a></cite></footer></blockquote>
-<blockquote class="blockquote-center"><p>Dream it possible</p>
+        <blockquote class="blockquote-center"><p>Dream it possible</p>
 </blockquote>
 <a id="more"></a>
+<h3 id="简明-Vim-学习攻略"><a href="#简明-Vim-学习攻略" class="headerlink" title="简明 Vim 学习攻略"></a>简明 Vim 学习攻略</h3><h3 id="了解-Vim"><a href="#了解-Vim" class="headerlink" title="了解 Vim"></a>了解 Vim</h3><blockquote>
+<p>以下两句对编辑器的最高评价足矣:</p>
+<pre><code>- VIM is the God of editors, EMACS is God’s editor
+- EMACS is actually an OS which pretends to be an editor 
+</code></pre></blockquote>
+<h3 id="我喜欢-Vim"><a href="#我喜欢-Vim" class="headerlink" title="我喜欢 Vim"></a>我喜欢 Vim</h3><p>  Eter：<br>  功能足够简单、足够便捷、足够强大<br>  只想说: “I Like It.”<br>  这两个股东编辑器的年龄:</p>
+<table>
+<thead>
+<tr>
+<th>编辑器</th>
+<th style="text-align:center">From_date</th>
+<th style="text-align:right">Age</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EMACS</td>
+<td style="text-align:center">1975 ~ 2016</td>
+<td style="text-align:right">41</td>
+</tr>
+<tr>
+<td>VI</td>
+<td style="text-align:center">1976 ~ 2016</td>
+<td style="text-align:right">40</td>
+</tr>
+<tr>
+<td>VIM</td>
+<td style="text-align:center">1991 ~ 2016</td>
+<td style="text-align:right">25</td>
+</tr>
+</tbody>
+</table>
+<h3 id="为什么选择-Vim"><a href="#为什么选择-Vim" class="headerlink" title="为什么选择 Vim"></a>为什么选择 Vim</h3><ul>
+<li>轻量级，迅速启动（相对于IDE）</li>
+<li>特性</li>
+<li>语法高亮</li>
+<li>自动对齐</li>
+<li>代码折叠</li>
+<li>自动补全</li>
+<li>显示行号</li>
+<li>重定义Tab</li>
+<li>十六进制编辑</li>
+<li>列编辑模式</li>
+<li>快速注释</li>
+<li>高级搜索，替代</li>
+<li>错误恢复</li>
+<li>迅速跳转</li>
+<li>Mark</li>
+</ul>
+<h3 id="如何学习-Vim"><a href="#如何学习-Vim" class="headerlink" title="如何学习 Vim"></a>如何学习 Vim</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># pwd </div><div class="line">/work/test</div><div class="line">#</div><div class="line"># touch test.c // 创建一个空的 C 文件</div><div class="line">#</div><div class="line"># vim test.c</div></pre></td></tr></table></figure>
+<p>然后进入vim 编辑模式<br><code>vim test.c</code><br><img src="/2016/11/27/LinuxLession-02/vim_01.png" alt="vim_01" title="vim_01"><br>编辑之后 先按 <code>ESC</code> ，再输入 <code>:wq</code> 保持退出<br><img src="/2016/11/27/LinuxLession-02/vim_02.png" alt="vim_02" title="vim_02"></p>
+<hr>
+<blockquote><p>VIM 命令图解</p>
+<ul>
+<li>这是 vim 的手册</li>
+</ul>
+<footer><strong>vgod</strong><cite><a href="http://blog.vgod.tw.s3.amazonaws.com/wp-content/uploads/2014/08/vgod-vim-cheat-sheet-full.pdf" target="_blank" rel="external">vim command</a></cite></footer></blockquote>
+<hr>
+<blockquote><p>VIM 大冒险</p>
+<ul>
+<li>这是 vim 的一个小游戏</li>
+</ul>
+<footer><strong>Doron Linder</strong><cite><a href="http://vim-adventures.com/" target="_blank" rel="external">Vim Adventures</a></cite></footer></blockquote>
+<hr>
+<hr>
+<hr>
+<h3 id="Vim-命令总结"><a href="#Vim-命令总结" class="headerlink" title="Vim 命令总结"></a>Vim 命令总结</h3><h4 id="各种插入模式"><a href="#各种插入模式" class="headerlink" title="各种插入模式"></a>各种插入模式</h4><ul>
+<li>a → 在光标后插入</li>
+<li>o → 在当前行后插入一个新行</li>
+<li>O → 在当前行前插入一个新行</li>
+<li>cw → 替换从光标所在位置后到一个单词结尾的字符</li>
+</ul>
+<hr>
+<h4 id="简单的移动光标"><a href="#简单的移动光标" class="headerlink" title="简单的移动光标"></a>简单的移动光标</h4><ul>
+<li>0 → 数字零，到行头</li>
+<li>^ → 到本行第一个不是blank字符的位置（所谓blank字符就是空格，tab，换行，回车等）</li>
+<li>$ → 到本行行尾</li>
+<li>g_ → 到本行最后一个不是blank字符的位置。</li>
+<li>fa → 到下一个为a的字符处，你也可以fs到下一个为s的字符。</li>
+<li>t, → 到逗号前的第一个字符。逗号可以变成其它字符。</li>
+<li>3fa → 在当前行查找第三个出现的a。</li>
+<li>F 和 T → 和 f 和 t 一样，只不过是相反方向。</li>
+<li>/pattern → 搜索 pattern 的字符串，可按n键到下一个</li>
+<li>w → 到下一个单词的开头</li>
+<li>e → 到下一个单词的结尾</li>
+<li>NG → 到第 N 行 </li>
+<li>gg → 到第一行</li>
+<li>G → 到最后一行</li>
+<li>% : 匹配括号移动，包括 (, {, [. </li>
+<li>* 和 #:  匹配光标当前所在的单词，移动光标到下一个（或上一个）匹配单词（*是下一个，#是上一个）</li>
+</ul>
+<hr>
+<h4 id="拷贝-粘贴"><a href="#拷贝-粘贴" class="headerlink" title="拷贝/粘贴"></a>拷贝/粘贴</h4><ul>
+<li>p → 粘贴</li>
+<li>yy → 拷贝当前行当行于 ddP</li>
+<li>2dd → 删除2行</li>
+<li>3p → 粘贴文本3次</li>
+<li>0y$ 命令意味着:<ul>
+<li>0 → 先到行头</li>
+<li>y → 从这里开始拷贝</li>
+<li>$ → 拷贝到本行最后一个字符</li>
+</ul>
+</li>
+<li>ye，从当前位置拷贝到本单词的最后一个字符</li>
+<li>y2/foo 来拷贝2个 “foo” 之间的字符串</li>
+<li>d (删除 )</li>
+<li>v (可视化的选择)</li>
+<li>gU (变大写)</li>
+<li>gu (变小写)</li>
+</ul>
+<hr>
+<h4 id="Undo-撤销-Redo"><a href="#Undo-撤销-Redo" class="headerlink" title="Undo(撤销) / Redo"></a>Undo(撤销) / Redo</h4><ul>
+<li>u → undo</li>
+<li><curl-r> → redo</curl-r></li>
+</ul>
+<h4 id="打开-保存-退出-改变文件-Buffer"><a href="#打开-保存-退出-改变文件-Buffer" class="headerlink" title="打开/保存/退出/改变文件(Buffer)"></a>打开/保存/退出/改变文件(Buffer)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">:e &lt;path/to/file&gt; → 打开一个文件</div><div class="line"></div><div class="line">:w → 存盘</div><div class="line"></div><div class="line">:saveas &lt;path/to/file&gt; → 另存为 &lt;path/to/file&gt;</div><div class="line">:x， ZZ 或 :wq → 保存并退出 (:x 表示仅在需要时保存，ZZ不需要输入冒号并回车)</div><div class="line">:q! → 退出不保存 :qa! 强行退出所有的正在编辑的文件，就算别的文件有更改。</div><div class="line">:bn 和 :bp → 你可以同时打开很多文件，使用这两个命令来切换下一个或上一个文件。（陈皓注：我喜欢使用:n到下一个文件）</div></pre></td></tr></table></figure>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">- 自动提示： &lt;C-n&gt; 和 &lt;C-p&gt;</div><div class="line">- 分屏: :split 和 vsplit.</div><div class="line">    - :split → 创建分屏 (:vsplit创建垂直分屏)</div><div class="line">    - &lt;C-w&gt;&lt;dir&gt; : dir就是方向，可以是 hjkl 或是 ←↓↑→ 中的一个，其用来切换分屏。</div><div class="line">    - &lt;C-w&gt;_ (或 &lt;C-w&gt;|) : 最大化尺寸 (&lt;C-w&gt;| 垂直分屏)</div><div class="line">    -  &lt;C-w&gt;+ (或 &lt;C-w&gt;-) : 增加尺寸</div><div class="line"></div><div class="line">- 宏录制： qa 操作序列 q, @a, @@</div><div class="line">    - qa 把你的操作记录在寄存器 a。</div><div class="line">    - 于是 @a 会replay被录制的宏。</div><div class="line">    - @@ 是一个快捷键用来replay最新录制的宏。</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">在一个只有一行且这一行只有“1”的文本中，键入如下命令：</div><div class="line"></div><div class="line">- qaYp&lt;C-a&gt;q→</div><div class="line">    - qa 开始录制</div><div class="line">    - Yp 复制行.</div><div class="line">    - &lt;C-a&gt; 增加1.</div><div class="line">    - q 停止录制.</div><div class="line">- @a → 在1下面写下 2</div><div class="line">- @@ → 在2 正面写下3</div><div class="line">- 现在做 100@@ 会创建新的100行，并把数据增加到 103.</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -371,7 +484,7 @@ Dream it possible">
       
         <div class="post-tags">
           
-            <a href="/tags/Linux/" rel="tag"># Linux</a>
+            <a href="/tags/Vim/" rel="tag"># Vim</a>
           
         </div>
       
@@ -431,8 +544,17 @@ Dream it possible">
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.png"
@@ -460,7 +582,7 @@ Dream it possible">
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -485,6 +607,22 @@ Dream it possible">
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#简明-Vim-学习攻略"><span class="nav-number">1.</span> <span class="nav-text">简明 Vim 学习攻略</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#了解-Vim"><span class="nav-number">2.</span> <span class="nav-text">了解 Vim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#我喜欢-Vim"><span class="nav-number">3.</span> <span class="nav-text">我喜欢 Vim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么选择-Vim"><span class="nav-number">4.</span> <span class="nav-text">为什么选择 Vim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何学习-Vim"><span class="nav-number">5.</span> <span class="nav-text">如何学习 Vim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vim-命令总结"><span class="nav-number">6.</span> <span class="nav-text">Vim 命令总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#各种插入模式"><span class="nav-number">6.1.</span> <span class="nav-text">各种插入模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#简单的移动光标"><span class="nav-number">6.2.</span> <span class="nav-text">简单的移动光标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#拷贝-粘贴"><span class="nav-number">6.3.</span> <span class="nav-text">拷贝/粘贴</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Undo-撤销-Redo"><span class="nav-number">6.4.</span> <span class="nav-text">Undo(撤销) / Redo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#打开-保存-退出-改变文件-Buffer"><span class="nav-number">6.5.</span> <span class="nav-text">打开/保存/退出/改变文件(Buffer)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他"><span class="nav-number">6.6.</span> <span class="nav-text">其他</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>

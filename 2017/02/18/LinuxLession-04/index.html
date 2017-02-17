@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="POSIX 正则 表达式," />
+  <meta name="keywords" content="POSIX,正则,表达式," />
 
 
 
@@ -98,7 +98,7 @@ POSIX正则表达式分为哪两种？他们的区别是什么？
 [charac">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LinuxLession-04 正则表达式">
-<meta property="og:url" content="https://wallehome.github.io/2017/02/17/LinuxLession-04/index.html">
+<meta property="og:url" content="https://wallehome.github.io/2017/02/18/LinuxLession-04/index.html">
 <meta property="og:site_name" content="WalleHome">
 <meta property="og:description" content="POSIX 正则表达式的一些事Hakuna   Matata
 
@@ -112,14 +112,14 @@ POSIX正则表达式分为哪两种？他们的区别是什么？
 * 匹配任意多个字符
 ? 匹配任意一个字符
 [charac">
-<meta property="og:image" content="https://wallehome.github.io/2017/02/17/LinuxLession-04/000.jpg">
-<meta property="og:image" content="https://wallehome.github.io/2017/02/17/LinuxLession-04/001.jpg">
-<meta property="og:image" content="https://wallehome.github.io/2017/02/17/LinuxLession-04/002.png">
-<meta property="og:image" content="https://wallehome.github.io/2017/02/17/LinuxLession-04/003.jpg">
-<meta property="og:image" content="https://wallehome.github.io/2017/02/17/LinuxLession-04/004.jpg">
-<meta property="og:image" content="https://wallehome.github.io/2017/02/17/LinuxLession-04/005.png">
-<meta property="og:image" content="https://wallehome.github.io/2017/02/17/LinuxLession-04/006.png">
-<meta property="og:updated_time" content="2017-02-17T16:55:07.000Z">
+<meta property="og:image" content="https://wallehome.github.io/2017/02/18/LinuxLession-04/000.jpg">
+<meta property="og:image" content="https://wallehome.github.io/2017/02/18/LinuxLession-04/001.jpg">
+<meta property="og:image" content="https://wallehome.github.io/2017/02/18/LinuxLession-04/002.png">
+<meta property="og:image" content="https://wallehome.github.io/2017/02/18/LinuxLession-04/003.jpg">
+<meta property="og:image" content="https://wallehome.github.io/2017/02/18/LinuxLession-04/004.jpg">
+<meta property="og:image" content="https://wallehome.github.io/2017/02/18/LinuxLession-04/005.png">
+<meta property="og:image" content="https://wallehome.github.io/2017/02/18/LinuxLession-04/006.png">
+<meta property="og:updated_time" content="2017-02-17T17:03:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LinuxLession-04 正则表达式">
 <meta name="twitter:description" content="POSIX 正则表达式的一些事Hakuna   Matata
@@ -134,7 +134,7 @@ POSIX正则表达式分为哪两种？他们的区别是什么？
 * 匹配任意多个字符
 ? 匹配任意一个字符
 [charac">
-<meta name="twitter:image" content="https://wallehome.github.io/2017/02/17/LinuxLession-04/000.jpg">
+<meta name="twitter:image" content="https://wallehome.github.io/2017/02/18/LinuxLession-04/000.jpg">
 
 
 
@@ -162,7 +162,7 @@ POSIX正则表达式分为哪两种？他们的区别是什么？
 
 
 
-  <link rel="canonical" href="https://wallehome.github.io/2017/02/17/LinuxLession-04/"/>
+  <link rel="canonical" href="https://wallehome.github.io/2017/02/18/LinuxLession-04/"/>
 
 
 
@@ -289,7 +289,7 @@ POSIX正则表达式分为哪两种？他们的区别是什么？
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://wallehome.github.io/2017/02/17/LinuxLession-04/">
+  <link itemprop="mainEntityOfPage" href="https://wallehome.github.io/2017/02/18/LinuxLession-04/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Eter">
@@ -326,8 +326,8 @@ POSIX正则表达式分为哪两种？他们的区别是什么？
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-17T23:33:20+08:00">
-                2017-02-17
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-18T01:01:20+08:00">
+                2017-02-18
               </time>
             
 
@@ -396,7 +396,7 @@ POSIX正则表达式分为哪两种？他们的区别是什么？
 <a id="more"></a>
 <p>先介绍前四个的:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">*               所有文件 </div><div class="line">g*              g开头的文件</div><div class="line">b*.txt          b开头的txt文件</div><div class="line">Data???         开头是Data长度为7的文件</div><div class="line">[abc]           以a或者b或者c开头的文件</div><div class="line">abc[0-9][0-9]   以abc开头后跟两个数字的文件</div><div class="line">[A-Z]           这个在不同的语言设置的系统下显示不同的结果</div></pre></td></tr></table></figure>
-<p>我们看几个例子: 下面的例子是在 centos下的。<br><img src="/2017/02/17/LinuxLession-04/000.jpg" alt="正则表达式示例" title="正则表达式示例"></p>
+<p>我们看几个例子: 下面的例子是在 centos下的。<br><img src="/2017/02/18/LinuxLession-04/000.jpg" alt="正则表达式示例" title="正则表达式示例"></p>
 <h2 id="A-Z-的差异"><a href="#A-Z-的差异" class="headerlink" title="A-Z 的差异"></a>A-Z 的差异</h2><p>我们看到上面的最后一个确实没有输出我们想要的结果，这是为什么？</p>
 <p>且听我们慢慢道来，话说UNIX刚刚出道的时候，</p>
 <p>只是在美国，所以那个时候的ASCII，一共有0-127个，</p>
@@ -406,7 +406,7 @@ POSIX正则表达式分为哪两种？他们的区别是什么？
 <p>为了支持这种能力，POSIX标准介绍了一种叫做locale的概念，它可以调整为自己国家的语言习惯，</p>
 <p>有的国家是按照子典排序来的，他们的排序是aAbBcC…xXyYzZ。</p>
 <p>这样在使用ls [A-Z]*的时候其实是匹配了除了a以外的所有的字母。</p>
-<p>我们通过一个例子来看一下，实际修改一下locale看看结果,<br><img src="/2017/02/17/LinuxLession-04/001.jpg" alt="修改locale" title="修改locale"></p>
+<p>我们通过一个例子来看一下，实际修改一下locale看看结果,<br><img src="/2017/02/18/LinuxLession-04/001.jpg" alt="修改locale" title="修改locale"></p>
 <blockquote>
 <p>我们看到上面切换语言之前先改成了LANG=”POSIX”，</p>
 </blockquote>
@@ -424,7 +424,7 @@ POSIX正则表达式分为哪两种？他们的区别是什么？
 <blockquote>
 <p>优点:  匹配的表达式较为简洁/方便<br>缺点:  匹配的范围粒度比较粗</p>
 </blockquote>
-<p>我们来测试一下：<br><img src="/2017/02/17/LinuxLession-04/002.png" alt="字符类正则表达式示例" title="字符类正则表达式示例"></p>
+<p>我们来测试一下：<br><img src="/2017/02/18/LinuxLession-04/002.png" alt="字符类正则表达式示例" title="字符类正则表达式示例"></p>
 <h2 id="POSIX-正则表达式"><a href="#POSIX-正则表达式" class="headerlink" title="POSIX 正则表达式"></a>POSIX 正则表达式</h2><p>我们经常听说，我们的这个程序支持 POSIX BRE 正则,</p>
 <p>这个支持POSIX ERE正则，那么我们就来说说POSIX正则表达式。</p>
 <p>这里只是简单的介绍一下他们的 区别具体的用法每个元字符表示是什么就不细说了。</p>
@@ -432,14 +432,14 @@ POSIX正则表达式分为哪两种？他们的区别是什么？
 <h3 id="那么他们有什么区别呢？"><a href="#那么他们有什么区别呢？" class="headerlink" title="那么他们有什么区别呢？"></a>那么他们有什么区别呢？</h3><p>其实他们还是比较相似的就是支持的元字符不同，BRE支持^$.[]*\，ERE除了支持上面的还支持这些(){}?+|。</p>
 <h3 id="应用程序的支持"><a href="#应用程序的支持" class="headerlink" title="应用程序的支持"></a>应用程序的支持</h3><p>支持BRE的程序有{sed,grep…}，支持ERE的程序有{egrep,grep -E,awk…}</p>
 <h3 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h3><h6 id="下面的是grep支持的是基础的正则表达式，如果遇到扩展的正则可以用-来表示。"><a href="#下面的是grep支持的是基础的正则表达式，如果遇到扩展的正则可以用-来表示。" class="headerlink" title="下面的是grep支持的是基础的正则表达式，如果遇到扩展的正则可以用 { 来表示。"></a>下面的是grep支持的是基础的正则表达式，如果遇到扩展的正则可以用 { 来表示。</h6><blockquote>
-<img src="/2017/02/17/LinuxLession-04/003.jpg" alt="grep基础正则表达式示例" title="grep基础正则表达式示例">
+<img src="/2017/02/18/LinuxLession-04/003.jpg" alt="grep基础正则表达式示例" title="grep基础正则表达式示例">
 </blockquote>
 <h6 id="下面的是egrep实现同样的命令。"><a href="#下面的是egrep实现同样的命令。" class="headerlink" title="下面的是egrep实现同样的命令。"></a>下面的是egrep实现同样的命令。</h6><blockquote>
-<img src="/2017/02/17/LinuxLession-04/004.jpg" alt="egrep基础正则表达式示例" title="egrep基础正则表达式示例">
+<img src="/2017/02/18/LinuxLession-04/004.jpg" alt="egrep基础正则表达式示例" title="egrep基础正则表达式示例">
 </blockquote>
 <h6 id="如果需要看他们的区别其实来一个例子就可以看出来了。"><a href="#如果需要看他们的区别其实来一个例子就可以看出来了。" class="headerlink" title="如果需要看他们的区别其实来一个例子就可以看出来了。"></a>如果需要看他们的区别其实来一个例子就可以看出来了。</h6><blockquote>
-<img src="/2017/02/17/LinuxLession-04/005.png" alt="005.png" title="">
-<img src="/2017/02/17/LinuxLession-04/006.png" alt="006.png" title="">
+<img src="/2017/02/18/LinuxLession-04/005.png" alt="005.png" title="">
+<img src="/2017/02/18/LinuxLession-04/006.png" alt="006.png" title="">
 </blockquote>
 <h6 id="注意"><a href="#注意" class="headerlink" title="注意:"></a>注意:</h6><blockquote>
 <p>基础正则表达式<br>“ \ “ 转义符<br>“ { “ 相当于扩展正则表达式里面的” { “<br>“ \{ “就是字符串 ‘ { ‘(单引号表示字符串)<br>比如:<br><code>%s/\%/\*/g</code><br>其中’ \% ‘ = ‘%’ 字符串’%’<br>其中’ \* ‘ = ‘<em>‘ 字符串’</em>‘</p>
@@ -467,7 +467,11 @@ POSIX正则表达式分为哪两种？他们的区别是什么？
       
         <div class="post-tags">
           
-            <a href="/tags/POSIX-正则-表达式/" rel="tag"># POSIX 正则 表达式</a>
+            <a href="/tags/POSIX/" rel="tag"># POSIX</a>
+          
+            <a href="/tags/正则/" rel="tag"># 正则</a>
+          
+            <a href="/tags/表达式/" rel="tag"># 表达式</a>
           
         </div>
       
@@ -565,7 +569,7 @@ POSIX正则表达式分为哪两种？他们的区别是什么？
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

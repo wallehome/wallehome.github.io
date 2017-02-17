@@ -106,7 +106,7 @@ POSIX正则表达式分为哪两种？他们的区别是什么？
 
 介绍
 因为shell频繁的使用文件名，所以shell体用了特殊字符来帮助快速的指定一组文件名——通配符。123456789* 匹配任意多个字符? 匹配任意一个字符[">
-<meta property="og:updated_time" content="2017-02-17T16:07:07.000Z">
+<meta property="og:updated_time" content="2017-02-17T16:08:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LinuxLession-04 正则表达式">
 <meta name="twitter:description" content="POSIX 正则表达式的一些事Hakuna   Matata
@@ -389,7 +389,7 @@ POSIX正则表达式分为哪两种？他们的区别是什么？
 <p>为了支持这种能力，POSIX标准介绍了一种叫做locale的概念，它可以调整为自己国家的语言习惯，</p>
 <p>有的国家是按照子典排序来的，他们的排序是aAbBcC…xXyYzZ。</p>
 <p>这样在使用ls [A-Z]*的时候其实是匹配了除了a以外的所有的字母。</p>
-<p>我们通过一个例子来看一下，实际修改一下locale看看结果:</p>
+<p>我们通过一个例子来看一下，实际修改一下locale看看结果,</p>
 <p>我们看到上面切换语言之前先改成了LANG=”POSIX”，</p>
 <p>然后在切换到其他的，这样我们能看到不同，我试过直接切换不起作用。 </p>
 <p>什么地方可以使用通配符呢？能加文件名的unix命令都可以用通配符，ls,cat,less,more,vim,grep,sed,awk…</p>
